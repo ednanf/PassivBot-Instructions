@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="js/languageToggle.js" defer></script>
+    <script src="js/copyCode.js" defer></script>
     <title>TelePassivBot - API Key Creation</title>
 </head>
 
@@ -150,9 +151,16 @@
                 <p class="ru-text">Наконец, добавьте следующие IP-адреса без пробелов между ними:</p>
 
             </li>
-            <div id="CopyCode">
-                <code>31.41.63.194,146.19.106.113</code>
+
+            <div id="copy-field">
+                <div id="CopyCode">
+                    <code>31.41.63.194,146.19.106.113</code>
+                </div>
+                <button onclick="copyToClipboard()" id="copy-button" class="en-text">📋 Copy to clipboard</button>
+                <button onclick="copyToClipboard()" id="copy-button" class="ru-text">📋 Копировать в буфер
+                    обмена</button>
             </div>
+
         </ul>
         <img src="public/sd-screenshots/16-sd.png" alt="API Key configuration">
 

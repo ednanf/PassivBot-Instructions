@@ -37,23 +37,6 @@ main {
     gap: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-
-    .language-menu {
-        position: unset;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .navbar-links {
-        flex-direction: column;
-    }
-
-    .navbar-links ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
 
 .language-menu button {
     appearance: none;
@@ -145,6 +128,31 @@ main {
     justify-content: center;
 }
 
+#copy-field {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    font-size: larger;
+}
+
+#copy-button {
+    appearance: none;
+    padding: 0;
+    margin-left: 10px;
+    background-image: none;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    text-shadow: none;
+    cursor: pointer;
+    font-size: medium;
+}
+
+#copy-button:hover {
+    color: #FCA311;
+}
+
+
 /* Image setup */
 img {
     max-width: 100%;
@@ -157,5 +165,23 @@ img {
 @media (min-width: 100%) {
     img {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .language-menu {
+        position: unset;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+    }
+
+    .navbar-links ul {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
