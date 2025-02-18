@@ -6,7 +6,7 @@
 body {
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom, #232328 0%, #232328 80%, #14213D);
+    background: linear-gradient(to bottom, #232328 0%, #232328 40%, #14213D);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -39,10 +39,19 @@ main {
 
 @media only screen and (max-width: 768px) {
 
+    .language-menu {
+        position: unset;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+    }
+
     .navbar-links ul {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 20px;
     }
 }
 
