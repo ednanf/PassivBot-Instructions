@@ -45,7 +45,48 @@ h2 {
 
 .navbar-links-selected {
     color: #FCA311;
-    text-decoration:
+}
+
+#welcome-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centers all child elements */
+    text-align: center;
+}
+
+#welcome-text div {
+    margin-bottom: 20px;
+}
+
+#telegram-logo {
+    width: 50px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+#welcome-text div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centers both the logo and text */
+}
+
+/* Optional: Style the link */
+#welcome-text a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Keep text color consistent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center image and text */
+}
+
+#welcome-text a:hover p {
+    color: #FCA311;
+    transition-duration: 0.4s;
 }
 
 /* Image setup */
