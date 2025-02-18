@@ -184,4 +184,9 @@ img {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+    #copy-field {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
