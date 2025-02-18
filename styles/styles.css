@@ -19,6 +19,33 @@ h2 {
     text-align: center;
 }
 
+header {
+    position: relative
+}
+
+.language-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    margin-right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.language-menu button {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    background-image: none;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    text-shadow: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .navbar-links {
     display: flex;
     justify-content: center;
