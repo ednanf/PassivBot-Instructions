@@ -10,18 +10,14 @@ body {
 }
 
 header {
-    position: relative
+    position: relative;
 }
 
 main {
     padding: 0 2%;
 }
 
-h1 {
-    text-align: center;
-}
-
-h2 {
+h1, h2 {
     text-align: center;
 }
 
@@ -47,7 +43,6 @@ blockquote {
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 0;
     margin-right: 10px;
     display: flex;
     gap: 10px;
@@ -55,13 +50,8 @@ blockquote {
 
 .language-menu button {
     appearance: none;
-    padding: 0;
-    margin: 0;
-    background-image: none;
-    border-radius: 0;
+    background: none;
     border: none;
-    background-color: transparent;
-    text-shadow: none;
     font-size: 2rem;
     cursor: pointer;
 }
@@ -80,7 +70,7 @@ blockquote {
     gap: 10px;
 }
 
-.navbar-links ul>li>a {
+.navbar-links ul > li > a {
     text-decoration: none;
     font-weight: bold;
 }
@@ -119,12 +109,6 @@ blockquote {
     height: auto;
 }
 
-#welcome-text div:last-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #welcome-text a {
     text-decoration: none;
     color: inherit;
@@ -154,13 +138,9 @@ blockquote {
 
 #copy-button {
     appearance: none;
-    padding: 0;
-    margin-left: 10px;
-    background-image: none;
-    border-radius: 0;
+    background: none;
     border: none;
-    background-color: transparent;
-    text-shadow: none;
+    margin-left: 10px;
     cursor: pointer;
     font-size: medium;
 }
@@ -169,28 +149,18 @@ blockquote {
     color: #FCA311;
 }
 
-/* Image setup */
 img {
     max-width: 100%;
     height: auto;
-    width: auto;
     display: block;
 }
 
-@media (min-width: 100%) {
-    img {
-        width: 100%;
-    }
-}
-
-/* Responsive design */
 @media only screen and (max-width: 768px) {
     p {
         line-height: 16pt;
     }
 
     blockquote {
-        line-height: 18px;
         margin: 0 0 0 10px;
         max-width: 80%;
     }
@@ -204,7 +174,6 @@ img {
     .navbar-links {
         padding: 0 20px;
         flex-direction: column;
-        box-sizing: border-box;
         max-width: 100%;
         overflow-x: hidden;
     }
@@ -220,8 +189,6 @@ img {
     }
 
     #warning-block {
-        border: 1px solid red;
-        border-radius: 10px;
         padding: 5%;
     }
 }

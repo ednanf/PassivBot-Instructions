@@ -1,132 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <script src="js/languageToggle.js" defer></script>
     <title>TelePassivBot - Telegram Configuration</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="top"></div>
     <header>
-        <div>
-            <h1 class="en-text">TelePassivBot Setup Guide</h1>
-            <h1 class="ru-text">Руководство по настройке TelePassivBot</h1>
+      <div>
+        <h1 class="en-text">TelePassivBot Setup Guide</h1>
+        <h1 class="ru-text">Руководство по настройке TelePassivBot</h1>
+      </div>
+      <nav class="navbar-links">
+        <ul>
+          <li>
+            <a href="index.html" class="en-text">Home</a>
+            <a href="index.html" class="ru-text">Главная</a>
+          </li>
+          <li>
+            <a href="subaccount.html" class="en-text">Sub-account Creation</a>
+            <a href="subaccount.html" class="ru-text">Создание субсчета</a>
+          </li>
+          <li>
+            <a href="apicreation.html" class="en-text">API Key Creation</a>
+            <a href="apicreation.html" class="ru-text">Создание ключа API</a>
+          </li>
+          <li>
+            <a href="telegramconfig.html" class="navbar-links-selected en-text"
+              >Telegram Configuration</a
+            >
+            <a href="telegramconfig.html" class="navbar-links-selected ru-text"
+              >Конфигурация Telegram</a
+            >
+          </li>
+          <li>
+            <a href="faq.html" class="en-text">FAQ</a>
+            <a href="faq.html" class="ru-text">FAQ</a>
+          </li>
+        </ul>
+        <div class="language-menu">
+          <button class="language-btn">🇷🇺</button>
+          <button class="language-btn">🇺🇸</button>
         </div>
-        <nav class="navbar-links">
-            <ul>
-                <li>
-                    <a href="index.html" class="en-text">Home</a>
-                    <a href="index.html" class="ru-text">Главная</a>
-                </li>
-                <li>
-                    <a href="subaccount.html" class="en-text">Sub-account Creation</a>
-                    <a href="subaccount.html" class="ru-text">Создание субсчета</a>
-                </li>
-                <li>
-                    <a href="apicreation.html" class="en-text">API Key Creation</a>
-                    <a href="apicreation.html" class="ru-text">Создание ключа API</a>
-                </li>
-                <li>
-                    <a href="telegramconfig.html" class="navbar-links-selected en-text">Telegram Configuration</a>
-                    <a href="telegramconfig.html" class="navbar-links-selected ru-text">Конфигурация Telegram</a>
-                </li>
-                <li>
-                    <a href="faq.html" class="en-text">FAQ</a>
-                    <a href="faq.html" class="ru-text">FAQ</a>
-                </li>
-            </ul>
-            <div class="language-menu">
-                <button class="language-btn">🇷🇺</button>
-                <button class="language-btn">🇺🇸</button>
-            </div>
-        </nav>
+      </nav>
     </header>
     <main>
-        <h2 class="en-text">Configuring TelePassivBot in Telegram</h2>
-        <h2 class="ru-text">Настройка TelePassivBot в Telegram</h2>
+      <h2 class="en-text">Configuring TelePassivBot in Telegram</h2>
+      <h2 class="ru-text">Настройка TelePassivBot в Telegram</h2>
 
-        <h3 class="en-text">Step 1</h3>
-        <h3 class="ru-text">Шаг 1</h3>
+      <h3 class="en-text">Step 1</h3>
+      <h3 class="ru-text">Шаг 1</h3>
 
-        <p class="en-text">Type "/start" to start the bot and choose a language.</p>
-        <p class="ru-text">Введите «/start», чтобы запустить бота и выбрать язык.</p>
-        <img src="public/sd-screenshots/20-sd.png" alt="Choose your language">
+      <p class="en-text">
+        Type "/start" to start the bot and choose a language.
+      </p>
+      <p class="ru-text">
+        Введите «/start», чтобы запустить бота и выбрать язык.
+      </p>
+      <img src="public/sd-screenshots/20-sd.png" alt="Choose your language" />
 
-        <h3 class="en-text">Step 2</h3>
-        <h3 class="ru-text">Шаг 2</h3>
+      <h3 class="en-text">Step 2</h3>
+      <h3 class="ru-text">Шаг 2</h3>
 
-        <p class="en-text">Click on "Add Bot" to create a new bot instance.</p>
-        <p class="ru-text">Нажмите на кнопку «Добавить бота», чтобы создать новый экземпляр бота.</p>
-        <img src="public/sd-screenshots/21-sd.png" alt="Add a bot">
+      <p class="en-text">Click on "Add Bot" to create a new bot instance.</p>
+      <p class="ru-text">
+        Нажмите на кнопку «Добавить бота», чтобы создать новый экземпляр бота.
+      </p>
+      <img src="public/sd-screenshots/21-sd.png" alt="Add a bot" />
 
-        <h3 class="en-text">Step 3</h3>
-        <h3 class="ru-text">Шаг 3</h3>
+      <h3 class="en-text">Step 3</h3>
+      <h3 class="ru-text">Шаг 3</h3>
 
-        <p class="en-text">Select your exchange. This guide uses Bybit as an example.</p>
-        <p class="ru-text">Выберите свою биржу. В данном руководстве в качестве примера используется Bybit.</p>
-        <img src="public/sd-screenshots/22-sd.png" alt="Exchange selection">
+      <p class="en-text">
+        Select your exchange. This guide uses Bybit as an example.
+      </p>
+      <p class="ru-text">
+        Выберите свою биржу. В данном руководстве в качестве примера
+        используется Bybit.
+      </p>
+      <img src="public/sd-screenshots/22-sd.png" alt="Exchange selection" />
 
-        <h3 class="en-text">Step 4</h3>
-        <h3 class="ru-text">Шаг 4</h3>
+      <h3 class="en-text">Step 4</h3>
+      <h3 class="ru-text">Шаг 4</h3>
 
-        <p class="en-text">Enter the API key generated in the previous section.</p>
-        <p class="ru-text">Введите ключ API, созданный в предыдущем разделе.</p>
-        <img src="public/sd-screenshots/23-sd.png" alt="API key">
+      <p class="en-text">
+        Enter the API key generated in the previous section.
+      </p>
+      <p class="ru-text">Введите ключ API, созданный в предыдущем разделе.</p>
+      <img src="public/sd-screenshots/23-sd.png" alt="API key" />
 
-        <h3 class="en-text">Step 5</h3>
-        <h3 class="ru-text">Шаг 5</h3>
+      <h3 class="en-text">Step 5</h3>
+      <h3 class="ru-text">Шаг 5</h3>
 
-        <p class="en-text">Enter the API Secret Key generated in the previous section.</p>
-        <p class="ru-text">Введите секретный ключ API, созданный в предыдущем разделе.</p>
+      <p class="en-text">
+        Enter the API Secret Key generated in the previous section.
+      </p>
+      <p class="ru-text">
+        Введите секретный ключ API, созданный в предыдущем разделе.
+      </p>
 
-        <p class="en-text">If successful, after a few seconds you should see your account balance and the new bot's name
+      <p class="en-text">
+        If successful, after a few seconds you should see your account balance
+        and the new bot's name.
+      </p>
+      <p class="ru-text">
+        Если все прошло успешно, через несколько секунд вы увидите баланс вашего
+        счета и имя нового бота.
+      </p>
+      <img src="public/sd-screenshots/24-sd.png" alt="API secret key" />
+
+      <h3 class="en-text">Step 6</h3>
+      <h3 class="ru-text">Шаг 6</h3>
+
+      <p class="en-text">Now it's time to choose a bot configuration.</p>
+      <p class="ru-text">Теперь пришло время выбрать конфигурацию бота.</p>
+      <img
+        src="public/sd-screenshots/25-sd.png"
+        alt="Bot configuration selection"
+      />
+
+      <h3 class="en-text">Step 7</h3>
+      <h3 class="ru-text">Шаг 7</h3>
+
+      <p class="en-text">
+        Choose whatever configuration you prefer, such as BrahmaBot or
+        DoubleDragon.
+      </p>
+      <p class="ru-text">
+        выберите любую конфигурацию, которую вы предпочитаете, например
+        BrahmaBot или DoubleDragon.
+      </p>
+      <img src="public/sd-screenshots/26-sd.png" alt="Bot configurations" />
+
+      <h3 class="en-text">Step 8</h3>
+      <h3 class="ru-text">Шаг 8</h3>
+
+      <p class="en-text">
+        A brief description will appear, if you agree, type "yes" to accept.
+      </p>
+      <p class="ru-text">
+        Появится краткое описание, если вы согласны, введите «да», чтобы
+        принять.
+      </p>
+      <img
+        src="public/sd-screenshots/27-sd.png"
+        alt="Confirm bot configuration"
+      />
+
+      <h3 class="en-text">Step 9</h3>
+      <h3 class="ru-text">Шаг 9</h3>
+
+      <p class="en-text">Click "Run bot" and you are good to go!</p>
+      <p class="ru-text">Нажмите «Запустить бота», и все готово!</p>
+      <img src="public/sd-screenshots/28-sd.png" alt="Run bot" />
+
+      <div id="bottom-nav-links">
+        <p class="en-text"><a href="#top">Go to top</a></p>
+        <p class="ru-text"><a href="#top">Перейти к началу</a></p>
+
+        <p class="en-text">
+          <a href="apicreation.html">Back to API Key Creation</a>
         </p>
-        <p class="ru-text">Если все прошло успешно, через несколько секунд вы увидите баланс вашего счета и имя нового
-            бота.</p>
-        <img src="public/sd-screenshots/24-sd.png" alt="API secret key">
-
-        <h3 class="en-text">Step 6</h3>
-        <h3 class="ru-text">Шаг 6</h3>
-
-        <p class="en-text">Now it's time to choose a bot configuration.</p>
-        <p class="ru-text">Теперь пришло время выбрать конфигурацию бота.</p>
-        <img src="public/sd-screenshots/25-sd.png" alt="Bot configuration selection">
-
-        <h3 class="en-text">Step 7</h3>
-        <h3 class="ru-text">Шаг 7</h3>
-
-        <p class="en-text">Choose whatever configuration you prefer, such as BrahmaBot or DoubleDragon.
+        <p class="ru-text">
+          <a href="apicreation.html">Вернуться к созданию ключа API</a>
         </p>
-        <p class="ru-text">выберите любую конфигурацию, которую вы предпочитаете, например BrahmaBot или DoubleDragon.
-        </p>
-        <img src="public/sd-screenshots/26-sd.png" alt="Bot configurations">
-
-        <h3 class="en-text">Step 8</h3>
-        <h3 class="ru-text">Шаг 8</h3>
-
-        <p class="en-text">A brief description will appear, if you agree, type "yes" to accept.</p>
-        <p class="ru-text">Появится краткое описание, если вы согласны, введите «да», чтобы принять.</p>
-        <img src="public/sd-screenshots/27-sd.png" alt="Confirm bot configuration">
-
-        <h3 class="en-text">Step 9</h3>
-        <h3 class="ru-text">Шаг 9</h3>
-
-        <p class="en-text">Click "Run bot" and you are good to go!</p>
-        <p class="ru-text">Нажмите «Запустить бота», и все готово!</p>
-        <img src="public/sd-screenshots/28-sd.png" alt="Run bot">
-
-        <div id="bottom-nav-links">
-            <p class="en-text"><a href="#top">Go to top</a></p>
-            <p class="ru-text"><a href="#top">Перейти к началу</a></p>
-
-            <p class="en-text"><a href="apicreation.html">Back to API Key Creation</a></p>
-            <p class="ru-text"><a href="apicreation.html">Вернуться к созданию ключа API</a></p>
-        </div>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
