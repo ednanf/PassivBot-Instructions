@@ -25,9 +25,22 @@ h2 {
     text-align: center;
 }
 
+p {
+    margin: 15px;
+    line-height: 15pt;
+}
+
 a:hover {
     color: #FCA311;
     transition-duration: 0.4s;
+}
+
+blockquote {
+    line-height: 18px;
+    padding: 10px 15px;
+    border-left: 4px solid #FCA311;
+    text-align: justify;
+    max-width: 50%;
 }
 
 .language-menu {
@@ -81,10 +94,7 @@ a:hover {
     margin: 5%;
     padding: 3%;
     border-radius: 10px;
-}
-
-.faq-card blockquote {
-    margin: 10px;
+    text-align: justify;
 }
 
 #welcome-text {
@@ -182,6 +192,15 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+    p {
+        line-height: 16pt;
+    }
+
+    blockquote {
+        line-height: 18px;
+        margin: 0 0 0 10px;
+        max-width: 80%;
+    }
 
     .language-menu {
         position: unset;
