@@ -1,97 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <script src="js/languageToggle.js" defer></script>
     <title>TelePassivBot Setup Guide</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
-            <h1 class="en-text">TelePassivBot Setup Guide</h1>
-            <h1 class="ru-text">Руководство по настройке TelePassivBot</h1>
+      <div>
+        <h1 class="en-text">TelePassivBot Setup Guide</h1>
+        <h1 class="ru-text">Руководство по настройке TelePassivBot</h1>
+      </div>
+      <nav class="navbar-links">
+        <ul>
+          <li>
+            <a href="index.html" class="navbar-links-selected en-text">Home</a>
+            <a href="index.html" class="navbar-links-selected ru-text"
+              >Главная</a
+            >
+          </li>
+          <li>
+            <a href="subaccount.html" class="en-text">Sub-account Creation</a>
+            <a href="subaccount.html" class="ru-text">Создание субсчета</a>
+          </li>
+          <li>
+            <a href="apicreation.html" class="en-text">API Key Creation</a>
+            <a href="apicreation.html" class="ru-text">Создание ключа API</a>
+          </li>
+          <li>
+            <a href="telegramconfig.html" class="en-text"
+              >Telegram Configuration</a
+            >
+            <a href="telegramconfig.html" class="ru-text"
+              >Конфигурация Telegram</a
+            >
+          </li>
+          <li>
+            <a href="faq.html" class="en-text">FAQ</a>
+            <a href="faq.html" class="ru-text">FAQ</a>
+          </li>
+        </ul>
+        <div class="language-menu">
+          <button class="language-btn">🇷🇺</button>
+          <button class="language-btn">🇺🇸</button>
         </div>
-        <nav class="navbar-links">
-            <ul>
-                <li>
-                    <a href="index.html" class="navbar-links-selected en-text">Home</a>
-                    <a href="index.html" class="navbar-links-selected ru-text">Главная</a>
-                </li>
-                <li>
-                    <a href="subaccount.html" class="en-text">Sub-account Creation</a>
-                    <a href="subaccount.html" class="ru-text">Создание субсчета</a>
-                </li>
-                <li>
-                    <a href="apicreation.html" class="en-text">API Key Creation</a>
-                    <a href="apicreation.html" class="ru-text">Создание ключа API</a>
-                </li>
-                <li>
-                    <a href="telegramconfig.html" class="en-text">Telegram Configuration</a>
-                    <a href="telegramconfig.html" class="ru-text">Конфигурация Telegram</a>
-                </li>
-                <li>
-                    <a href="faq.html" class="en-text">FAQ</a>
-                    <a href="faq.html" class="ru-text">FAQ</a>
-                </li>
-            </ul>
-            <div class="language-menu">
-                <button class="language-btn">🇷🇺</button>
-                <button class="language-btn">🇺🇸</button>
-            </div>
-        </nav>
+      </nav>
     </header>
     <main>
-        <h2 class="en-text">Welcome</h2>
-        <h2 class="ru-text">Добро пожаловать</h2>
-        <div id="welcome-text">
-            <div>
-                <div class="en-text" id="warning-block">
-                    <div style="color: red; font-weight: 800;">WARNING</div>
-                    <p>Investing in crypto always pose a risk of losing money. There is no way of doing trades with no
-                        risks.</p>
-                    <p> Always do your own research, you are responsible for your
-                        actions.</p>
-                </div>
-                <div class="ru-text" id="warning-block">
-                    <div style="color: red; font-weight: 800;">ВНИМАНИЕ</div>
-                    <p>Инвестиции в криптовалюты всегда сопряжены с риском потерять деньги. Не существует способа
-                        совершать сделки без риска.</p>
-                    <p>Всегда проводите собственные исследования, вы сами отвечаете за свои действия.</p>
-                </div>
+      <h2 class="en-text">Welcome</h2>
+      <h2 class="ru-text">Добро пожаловать</h2>
+      <div id="welcome-text">
+        <div>
+          <div class="en-text" id="warning-block">
+            <div style="color: red; font-weight: 800">WARNING</div>
+            <p>
+              Investing in crypto always pose a risk of losing money. There is
+              no way of doing trades with no risks.
+            </p>
+            <p>
+              Always do your own research, you are responsible for your actions.
+            </p>
+          </div>
+          <div class="ru-text" id="warning-block">
+            <div style="color: red; font-weight: 800">ВНИМАНИЕ</div>
+            <p>
+              Инвестиции в криптовалюты всегда сопряжены с риском потерять
+              деньги. Не существует способа совершать сделки без риска.
+            </p>
+            <p>
+              Всегда проводите собственные исследования, вы сами отвечаете за
+              свои действия.
+            </p>
+          </div>
 
+          <p class="en-text">
+            This guide is divided in 3 sections: Sub-account Creation, API Key
+            Creation and Telegram Configuration.
+          </p>
+          <p class="ru-text">
+            Это руководство состоит из 3 разделов: Создание субаккаунта,
+            создание ключа API и настройка Telegram.
+          </p>
 
+          <p class="en-text">
+            If you are completely new to this, please start from Sub-account
+            Creation, and follow each step carefully.
+          </p>
+          <p class="ru-text">
+            Если вы совсем новичок, начните с создания субаккаунта и внимательно
+            следуйте каждому шагу.
+          </p>
 
-                <p class="en-text">This guide is divided in 3 sections: Sub-account Creation, API Key Creation and
-                    Telegram Configuration.</p>
-                <p class="ru-text">Это руководство состоит из 3 разделов: Создание субаккаунта, создание ключа API и
-                    настройка Telegram.</p>
+          <p class="en-text">
+            Questions and doubts? Ask in the official Telegram group and someone
+            will try their best to answer you as soon as possible!
+          </p>
+          <p class="ru-text">
+            Вопросы и сомнения? Спросите в официальной группе Telegram, и
+            кто-нибудь постарается ответить вам как можно скорее!
+          </p>
 
-                <p class="en-text">If you are completely new to this, please start from
-                    Sub-account Creation, and follow each step carefully.</p>
-                <p class="ru-text">Если вы совсем новичок, начните с создания субаккаунта и внимательно следуйте каждому
-                    шагу.</p>
-
-                <p class="en-text">Questions and doubts? Ask in the official Telegram
-                    group and someone will try their best to answer you as soon as possible!</p>
-                <p class="ru-text">Вопросы и сомнения? Спросите в официальной группе Telegram, и кто-нибудь постарается
-                    ответить вам как можно скорее!</p>
-
-                <p class="en-text">Please, <u><b>DO NOT</b></u> send private messages to admins.</p>
-                <p class="ru-text">Пожалуйста, <u><b>НЕ</b></u> отправляйте личные сообщения администраторам.</p>
-            </div>
-            <div>
-                <a href="https://t.me/TelePassivBotChat" target="_blank">
-                    <img src="public/icons/Telegram_2019_Logo.svg" alt="Telegram logo" id="telegram-logo">
-                    <p class="en-text">TelePassivBot Official Group</p>
-                    <p class="ru-text">Официальная группа TelePassivBot</p>
-                </a>
-            </div>
+          <p class="en-text">
+            Please, <u><b>DO NOT</b></u> send private messages to admins.
+          </p>
+          <p class="ru-text">
+            Пожалуйста, <u><b>НЕ</b></u> отправляйте личные сообщения
+            администраторам.
+          </p>
         </div>
+        <div>
+          <a href="https://t.me/TelePassivBotChat" target="_blank">
+            <img
+              src="public/icons/Telegram_2019_Logo.svg"
+              alt="Telegram logo"
+              id="telegram-logo"
+            />
+            <p class="en-text">TelePassivBot Official Group</p>
+            <p class="ru-text">Официальная группа TelePassivBot</p>
+          </a>
+        </div>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
