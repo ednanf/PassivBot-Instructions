@@ -202,7 +202,11 @@ img {
     }
 
     .navbar-links {
+        padding: 0 20px;
         flex-direction: column;
+        box-sizing: border-box;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .navbar-links ul {
