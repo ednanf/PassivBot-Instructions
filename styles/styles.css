@@ -1,194 +1,195 @@
 * {
-    font-family: 'Helvetica';
-    color: white;
+  font-family: "Helvetica";
+  color: white;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #232328;
+  margin: 0;
+  padding: 0;
+  background-color: #232328;
 }
 
 header {
-    position: relative;
+  position: relative;
 }
 
 main {
-    padding: 0 2%;
+  padding: 0 2%;
 }
 
-h1, h2 {
-    text-align: center;
+h1,
+h2 {
+  text-align: center;
 }
 
 p {
-    margin: 15px;
-    line-height: 15pt;
+  margin: 15px;
+  line-height: 15pt;
 }
 
 a:hover {
-    color: #FCA311;
-    transition-duration: 0.4s;
+  color: #fca311;
+  transition-duration: 0.4s;
 }
 
 blockquote {
-    line-height: 18px;
-    padding: 10px 15px;
-    border-left: 4px solid #FCA311;
-    text-align: justify;
-    max-width: 50%;
+  line-height: 18px;
+  padding: 10px 15px;
+  border-left: 4px solid #fca311;
+  text-align: justify;
+  max-width: 50%;
 }
 
 .language-menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 10px;
-    display: flex;
-    gap: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .language-menu button {
-    appearance: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
+  appearance: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .navbar-links {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .navbar-links ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
 }
 
 .navbar-links ul > li > a {
-    text-decoration: none;
-    font-weight: bold;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .navbar-links-selected {
-    color: #FCA311;
+  color: #fca311;
 }
 
 .faq-card {
-    border: 1px solid #FCA311;
-    margin: 5%;
-    padding: 3%;
-    border-radius: 10px;
-    text-align: justify;
+  border: 1px solid #fca311;
+  margin: 5%;
+  padding: 3%;
+  border-radius: 10px;
+  text-align: justify;
 }
 
 #welcome-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #welcome-text div {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #warning-block {
-    border: 1px solid red;
-    border-radius: 10px;
-    padding: 1%;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 1%;
 }
 
 #telegram-logo {
-    width: 50px;
-    height: auto;
+  width: 50px;
+  height: auto;
 }
 
 #welcome-text a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #welcome-text a:hover p {
-    color: #FCA311;
-    transition-duration: 0.4s;
+  color: #fca311;
+  transition-duration: 0.4s;
 }
 
 #bottom-nav-links {
-    display: flex;
-    gap: 2%;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  gap: 2%;
+  text-align: center;
+  justify-content: center;
 }
 
 #copy-field {
-    display: flex;
-    align-items: center;
-    margin: 30px;
-    font-size: larger;
+  display: flex;
+  align-items: center;
+  margin: 30px;
+  font-size: larger;
 }
 
 #copy-button {
-    appearance: none;
-    background: none;
-    border: none;
-    margin-left: 10px;
-    cursor: pointer;
-    font-size: medium;
+  appearance: none;
+  background: none;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: medium;
 }
 
 #copy-button:hover {
-    color: #FCA311;
+  color: #fca311;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media only screen and (max-width: 768px) {
-    p {
-        line-height: 16pt;
-    }
+  p {
+    line-height: 16pt;
+  }
 
-    blockquote {
-        margin: 0 0 0 10px;
-        max-width: 80%;
-    }
+  blockquote {
+    margin: 0 0 0 10px;
+    max-width: 80%;
+  }
 
-    .language-menu {
-        position: unset;
-        justify-content: center;
-        margin-top: 10px;
-    }
+  .language-menu {
+    position: unset;
+    justify-content: center;
+    margin-top: 10px;
+  }
 
-    .navbar-links {
-        padding: 0 20px;
-        flex-direction: column;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
+  .navbar-links {
+    padding: 0 20px;
+    flex-direction: column;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
-    .navbar-links ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  .navbar-links ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    #copy-field {
-        flex-direction: column;
-        gap: 10px;
-    }
+  #copy-field {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    #warning-block {
-        padding: 5%;
-    }
+  #warning-block {
+    padding: 5%;
+  }
 }
