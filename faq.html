@@ -55,132 +55,131 @@
 
       <div class="en-text faq-card">
         <p>Q: Is this a paid service?</p>
-
         <p>
-          A: Yes, you should send 10% of what the bot earned when the bot closes
-          the profits/losses for the week (Sunday or Monday depending where you
+          A: Yes, you should send 10% of the earnings once the bot closes the
+          week’s profits and losses (Sunday or Monday, depending on where you
           live).
         </p>
         <p>
-          Choose "Balance" to see how much you own this week, and payment
-          instructions. If you still don't understand how to pay, ask in chat
-          and someone can help you.
+          Select "Balance" to view your current funds and payment instructions.
+          If you still do not understand how to pay, ask in chat and someone can
+          help.
         </p>
       </div>
       <div class="ru-text faq-card">
         <p>В: Это платная услуга?</p>
         <p>
-          О: Да, вы должны отправить 10% от того, что бот заработал, когда бот
-          закроет прибыль/убытки за неделю (в воскресенье или понедельник, в
+          О: Да, вы должны отправить 10% от заработка бота, когда бот завершит
+          расчет прибыли и убытков за неделю (в воскресенье или понедельник, в
           зависимости от того, где вы живете).
         </p>
         <p>
-          Выберите «Баланс», чтобы узнать, сколько вы владеете на этой неделе, и
-          инструкции по оплате. Если вы все еще не понимаете, как платить,
-          спросите в чате, и вам помогут.
+          Выберите «Баланс», чтобы узнать ваш текущий баланс и инструкции по
+          оплате. Если вы все еще не понимаете, как платить, задайте вопрос в
+          чате – вам помогут.
         </p>
       </div>
 
       <div class="en-text faq-card">
         <p>Q: What does the "Risk Level" button do?</p>
-
-        <p>A: The Risk Level determines, in short, it is the bot's leverage.</p>
+        <p>A: The Risk Level determines the bot's effective leverage.</p>
         <p>
           The long answer: The wallet exposure limit defines the maximum ratio
-          of position size to account balance that the bot can use. This limit
-          can exceed 1.0 (or 100%) when leverage is applied. For instance, if
-          the total wallet exposure limit is set to 2.0 while trading four
-          different coins, the exposure per coin would be (2.0 / 4) = 0.5 or
-          50%. If trading COIN at $1.00 with a wallet balance of $1,000, the
-          maximum allowable position size would be (0.5 * $1,000) / $1.00 = 500
-          COIN.
+          of position size to account balance that the bot can use. For
+          instance, if the total wallet exposure limit is set to 2.0 while
+          trading four different coins, the exposure per coin would be (2.0 / 4)
+          = 0.5 or 50%. If trading COIN at $1.00 with a wallet balance of
+          $1,000, the maximum allowable position size would be (0.5 * $1,000) /
+          $1.00 = 500 COIN.
         </p>
         <p>
-          ATTENTION: a higher wallet exposure limit increases risk. For long
-          positions, an exposure limit above 1.0 raises the risk of liquidation.
-          Short positions, however, carry liquidation risk at any exposure
-          level.
+          Note: A higher wallet exposure limit increases risk. For long
+          positions, an exposure limit above 1.0 raises the risk of liquidation,
+          while short positions carry liquidation risk at any exposure level.
         </p>
       </div>
       <div class="ru-text faq-card">
         <p>В: Что делает кнопка «Уровень риска»?</p>
-
-        <p>O: Режим риска определяет, в общем, уровень лeverage у бота.</p>
+        <p>О: Уровень риска определяет кредитное плечо бота.</p>
         <p>
-          Режим риска определяет максимальную пропорцию размера позиции к
-          балансу счета, которую может использовать бот. Этот лимит может быть
-          больше 1.0 (или 100%), если применяетсяeverage. Например, при
-          установке общей границы уровня риска на 2.0 при торговле четырьмя
-          различными криптовалютами, уровень риска для каждой валюты составит
-          (2.0 / 4) = 0.5 или 50%. Если торговать COIN по цене 1.00
-          сбалансомпортфеляв 1.000, максимальный разрешенный размер позиции
-          будет равен (0.5 *1,000)/1,000)/1.00 = 500 COIN.
+          Подробное объяснение: лимит экспозиции кошелька определяет
+          максимальное соотношение размера позиции к балансу счета, которое
+          может использовать бот. Этот лимит может превышать 1.0 (или 100%),
+          если используется кредитное плечо. Например, если общий лимит
+          экспозиции равен 2.0 при торговле четырьмя различными криптовалютами,
+          экспозиция на одну валюту составит (2.0 / 4) = 0.5 или 50%. Если
+          торговать COIN по цене 1.00 при балансе кошелька в 1,000, максимальный
+          допустимый размер позиции будет (0.5 * 1,000) / 1.00 = 500 COIN.
         </p>
         <p>
-          ВНИМАНИЕ: более высокий лимит риска кошелька увеличивает риск. Для
-          длинных позиций лимит риска выше 1,0 повышает риск ликвидации.
-          Короткие позиции, однако, несут риск ликвидации при любом уровне
-          экспирации.
+          ВНИМАНИЕ: более высокий лимит экспозиции увеличивает риск. Для длинных
+          позиций лимит выше 1.0 повышает риск ликвидации, а для коротких
+          позиций риск ликвидации присутствует при любом уровне экспозиции.
         </p>
       </div>
 
       <div class="en-text faq-card">
         <p>Q: What does the "Unstuck" button do?</p>
-
-        <p>A: Quoting PassivBot's instructions:</p>
-        <blockquote>
-          "Passivbot manages underperforming, or 'stuck', positions by realizing
-          small losses over time. If multiple positions are stuck, the bot
-          prioritizes positions with the smallest gap between the entry price
-          and current market price for "unstucking". Losses are limited by
-          ensuring that the account balance does not fall under a set percentage
-          below the past peak balance."
-        </blockquote>
+        <p>
+          A: Passivbot manages underperforming, or "stuck", positions by
+          realizing small losses over time. If multiple positions are stuck, the
+          bot prioritizes the one with the smallest gap between its entry price
+          and the current market price for unsticking. Losses are limited by
+          ensuring that the account balance does not drop below a set percentage
+          of its past peak.
+        </p>
       </div>
       <div class="ru-text faq-card">
         <p>В: Что делает кнопка «Анстак»?</p>
         <p>О: Цитирую инструкции PassivBot:</p>
         <blockquote>
-          «Passivbot управляет малоэффективными, или „застрявшими“, позициями,
-          получая небольшие убытки с течением времени. Если несколько позиций
-          застряли, бот отдает предпочтение позициям с наименьшим разрывом между
-          ценой входа и текущей рыночной ценой для «развязывания». Убытки
-          ограничиваются за счет того, что баланс счета не опускается ниже
-          установленного процента ниже прошлого пикового баланса.»
+          «Passivbot управляет неэффективными, или «застрявшими», позициями,
+          реализуя небольшие убытки с течением времени. Если несколько позиций
+          оказались застрявшими, бот отдает предпочтение той, у которой
+          наименьший разрыв между ценой входа и текущей рыночной ценой для её
+          «развязывания». Убытки ограничиваются тем, что баланс счета не
+          опускается ниже определенного процента от предыдущего пикового
+          значения.»
         </blockquote>
       </div>
 
       <div class="en-text faq-card">
-        <p>Q: What is the best configurations for bot, risk, unstuck?</p>
         <p>
-          A: There is no "best," the market fluctuates every minute. A bot that
-          performed well today might not do it so tomorrow.
+          Q: What are the best configurations for bot, risk, and unstuck
+          settings?
+        </p>
+        <p>
+          A: There is no "best" configuration—the market fluctuates every
+          minute. A bot that performs well today might not perform as well
+          tomorrow.
         </p>
       </div>
       <div class="ru-text faq-card">
         <p>
-          В: Какие конфигурации лучше всего подходят для бота, риска, неудачи?
+          В: Какие конфигурации лучше всего подходят для бота, риска и режима
+          развязывания?
         </p>
         <p>
-          О: Не существует «лучшего», рынок колеблется каждую минуту. Бот,
-          который хорошо работает сегодня, может не делать этого завтра.
+          О: Не существует «лучшей» конфигурации — рынок колеблется каждую
+          минуту. Бот, который хорошо работает сегодня, может работать не так
+          хорошо завтра.
         </p>
       </div>
 
       <div class="en-text faq-card">
-        <p>Q: Can I run more than 1 bot?</p>
+        <p>Q: Can I run more than one bot?</p>
         <p>
-          A: Yes, but create one sub-account and add funds for each bot. Never
-          connect more than 1 bot per sub-account, their operation might have
-          issues.
+          A: Yes, but create a separate sub-account and add funds for each bot.
+          Never connect more than one bot to a single sub-account, as it may
+          cause operational issues.
         </p>
       </div>
       <div class="ru-text faq-card">
-        <p>В: Могу ли я запустить более 1 бота?</p>
+        <p>В: Могу ли я запустить более одного бота?</p>
         <p>
-          О: Да, но создайте один субаккаунт и добавьте средства для каждого
-          бота. Никогда не подключайте более 1 бота на субсчет, могут возникнуть
-          проблемы с их работой.
+          О: Да, но создайте отдельный субаккаунт для каждого бота и внесите
+          соответствующие средства. Никогда не подключайте более одного бота в
+          одном субсчете, так как это может привести к проблемам в работе.
         </p>
       </div>
 
@@ -188,24 +187,18 @@
         <p>Q: Can I trade manually in the same sub-account?</p>
         <p>
           A: It is best to refrain from doing so. The bot calculates your
-          current funds to place positions, and if you constantly mess with it,
-          the bot may not operate properly.
-        </p>
-        <p>
-          You should also avoid placing positions, modifying take profits, etc.
-          manually. Let the bot work alone!
+          available funds to place positions, and constant interference may
+          cause it to operate improperly. Avoid manually placing positions or
+          modifying take profits—let the bot work independently.
         </p>
       </div>
       <div class="ru-text faq-card">
-        <p>В: Могу ли я торговать вручную на одном и том же субсчете?</p>
+        <p>В: Могу ли я торговать вручную в одном и том же субсчете?</p>
         <p>
-          О: Лучше воздержаться от этого. Бот рассчитывает ваши текущие средства
-          для размещения позиций, и если вы будете постоянно вмешиваться в этот
-          процесс, бот может работать некорректно.
-        </p>
-        <p>
-          Вам также не следует вручную выставлять позиции, изменять тейк-профиты
-          и т.д. Пусть бот работает сам!
+          О: Лучше воздержитесь от этого. Бот рассчитывает ваши текущие средства
+          для размещения позиций, и постоянное вмешательство может привести к
+          его некорректной работе. Также не выставляйте вручную позиции и не
+          изменяйте тейк-профиты — позвольте боту работать самостоятельно.
         </p>
       </div>
 
