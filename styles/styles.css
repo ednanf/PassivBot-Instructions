@@ -4,11 +4,17 @@
 }
 
 body {
-    height: 100vh;
     margin: 0;
     padding: 0;
-    /* background: linear-gradient(to bottom, #232328 0%, #14213D); */
     background-color: #232328;
+}
+
+header {
+    position: relative
+}
+
+main {
+    padding: 0 2%;
 }
 
 h1 {
@@ -19,12 +25,9 @@ h2 {
     text-align: center;
 }
 
-header {
-    position: relative
-}
-
-main {
-    padding: 0 2%;
+a:hover {
+    color: #FCA311;
+    transition-duration: 0.4s;
 }
 
 .language-menu {
@@ -36,7 +39,6 @@ main {
     display: flex;
     gap: 10px;
 }
-
 
 .language-menu button {
     appearance: none;
@@ -70,13 +72,19 @@ main {
     font-weight: bold;
 }
 
-.navbar-links ul>li>a:hover {
-    color: #FCA311;
-    transition-duration: 0.4s;
-}
-
 .navbar-links-selected {
     color: #FCA311;
+}
+
+.faq-card {
+    border: 1px solid #FCA311;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.faq-card blockquote {
+    margin: 10px;
 }
 
 #welcome-text {
@@ -89,6 +97,12 @@ main {
 
 #welcome-text div {
     margin-bottom: 20px;
+}
+
+#warning-block {
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 5%;
 }
 
 #telegram-logo {
@@ -151,7 +165,6 @@ main {
 #copy-button:hover {
     color: #FCA311;
 }
-
 
 /* Image setup */
 img {
