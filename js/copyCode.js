@@ -1,5 +1,5 @@
 function copyToClipboard(event) {
-  var copyText = document.getElementById("CopyCode");
+  let copyText = document.getElementById("CopyCode");
   navigator.clipboard
     .writeText(copyText.innerText)
     .then(() => {
