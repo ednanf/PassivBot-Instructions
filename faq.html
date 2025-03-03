@@ -6,10 +6,35 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="js/languageToggle.js" defer></script>
     <script src="js/copyCode.js" defer></script>
+    <script src="js/modal.js" defer></script>
     <title>TelePassivBot - FAQ</title>
   </head>
 
   <body>
+    <!-- Warning Modal -->
+    <div id="warning-modal" class="modal">
+      <div class="modal-content">
+        <div style="color: red; font-weight: 800">WARNING / ВНИМАНИЕ</div>
+        <p>
+          Investing in crypto always poses a risk of losing money. There is no
+          way to trade without risk.
+        </p>
+        <p>
+          Always do your own research. You are responsible for your actions.
+        </p>
+        <hr class="modal-divider" />
+        <p>
+          Инвестиции в криптовалюты всегда сопряжены с риском потерять деньги.
+          Не существует способа совершать сделки без риска.
+        </p>
+        <p>
+          Всегда проводите собственные исследования, вы сами отвечаете за свои
+          действия.
+        </p>
+        <button id="accept-warning">I understood / Я понял</button>
+      </div>
+    </div>
+
     <div id="top"></div>
     <header>
       <div>

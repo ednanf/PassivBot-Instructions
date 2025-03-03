@@ -156,6 +156,53 @@ img {
   display: block;
 }
 
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #232328;
+  padding: 30px;
+  border: 2px solid #fca311;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 80%;
+  text-align: center;
+}
+
+.modal-divider {
+  border: none;
+  border-top: 1px solid #fca311;
+  margin: 20px 0;
+}
+
+#accept-warning {
+  background-color: #232328;
+  border: 2px solid #fca311;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#accept-warning:hover {
+  background-color: #fca311;
+  color: #232328;
+}
+
 @media only screen and (max-width: 768px) {
   p {
     line-height: 16pt;
