@@ -136,39 +136,61 @@
 
       <div class="en-text faq-card">
         <p>Q: What does the "Risk Level" button do?</p>
-        <p>A: The Risk Level determines the bot's effective leverage.</p>
         <p>
-          The long answer: The wallet exposure limit defines the maximum ratio
-          of position size to account balance that the bot can use. For
-          instance, if the total wallet exposure limit is set to 2.0 while
-          trading four different coins, the exposure per coin would be (2.0 / 4)
-          = 0.5 or 50%. If trading COIN at $1.00 with a wallet balance of
-          $1,000, the maximum allowable position size would be (0.5 * $1,000) /
-          $1.00 = 500 COIN.
+          A: The risk button allows users to set the Total Wallet Exposure
+          (TWE). TWE determines how much of the current funds the bot can use.
         </p>
         <p>
-          Note: A higher wallet exposure limit increases risk. For long
-          positions, an exposure limit above 1.0 raises the risk of liquidation,
-          while short positions carry liquidation risk at any exposure level.
+          For instance, BrahmaBot currently has its default risk set to TWE 2
+          and its leverage set to 10x*. This means 20% of your funds are
+          actively traded by the bot, while the remaining 80% serves as support
+          if the price moves against your position.
         </p>
+        <p>
+          With TWE 2, liquidation occurs at approximately a 50% drop from the
+          average position price.
+        </p>
+        <p>
+          As another example, TWE 10 represents the entire deposit. At this
+          level, liquidation happens if the price moves against the position by
+          about 8-9%.
+        </p>
+        <p>
+          Most users set TWE between 2 and 5, with 5 being highly aggressive and
+          risky. You can adjust your TWE separately for long and short
+          positions, but remember: a higher TWE means a greater risk of
+          liquidation!
+        </p>
+        <p>*Different leverage levels change the calculations accordingly.</p>
       </div>
       <div class="ru-text faq-card">
         <p>В: Что делает кнопка «Уровень риска»?</p>
-        <p>О: Уровень риска определяет кредитное плечо бота.</p>
         <p>
-          Подробное объяснение: лимит экспозиции кошелька определяет
-          максимальное соотношение размера позиции к балансу счета, которое
-          может использовать бот. Этот лимит может превышать 1.0 (или 100%),
-          если используется кредитное плечо. Например, если общий лимит
-          экспозиции равен 2.0 при торговле четырьмя различными криптовалютами,
-          экспозиция на одну валюту составит (2.0 / 4) = 0.5 или 50%. Если
-          торговать COIN по цене 1.00 при балансе кошелька в 1,000, максимальный
-          допустимый размер позиции будет (0.5 * 1,000) / 1.00 = 500 COIN.
+          О: Кнопка «Уровень риска» позволяет пользователям установить
+          показатель Total Wallet Exposure (TWE) — общий уровень задействованных
+          средств. TWE определяет, какую часть текущего депозита бот может
+          использовать в торгах.
         </p>
         <p>
-          ВНИМАНИЕ: более высокий лимит экспозиции увеличивает риск. Для длинных
-          позиций лимит выше 1.0 повышает риск ликвидации, а для коротких
-          позиций риск ликвидации присутствует при любом уровне экспозиции.
+          Например, у BrahmaBot по умолчанию установлен риск на уровне TWE 2 и
+          кредитное плечо 10x*. Это означает, что бот активно использует 20%
+          ваших средств, а оставшиеся 80% служат в качестве резерва, если цена
+          пойдет против вашей позиции. При TWE 2 ликвидация происходит при
+          снижении цены примерно на 50% от средней цены позиции.
+        </p>
+        <p>
+          Другой пример: TWE 10 означает задействование всего депозита. В этом
+          случае ликвидация наступает, если цена движется против позиции
+          примерно на 8–9%.
+        </p>
+        <p>
+          Большинство пользователей выбирают TWE в диапазоне от 2 до 5, где 5 —
+          это крайне агрессивный и рискованный уровень. Вы можете устанавливать
+          TWE отдельно для длинных и коротких позиций, но помните: чем выше TWE,
+          тем выше риск ликвидации!
+        </p>
+        <p>
+          *Различные уровни кредитного плеча изменяют соответствующие расчеты.
         </p>
       </div>
 
